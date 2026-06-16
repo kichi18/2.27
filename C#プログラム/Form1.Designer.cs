@@ -93,6 +93,7 @@
             button1.TabIndex = 4;
             button1.Text = "ファイル選択";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
