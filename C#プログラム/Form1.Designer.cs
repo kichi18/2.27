@@ -80,9 +80,8 @@
             label3.AutoSize = true;
             label3.Location = new Point(208, 94);
             label3.Name = "label3";
-            label3.Size = new Size(59, 25);
+            label3.Size = new Size(0, 25);
             label3.TabIndex = 3;
-            label3.Text = "label3";
             // 
             // button1
             // 
@@ -104,6 +103,7 @@
             button2.TabIndex = 5;
             button2.Text = "表示";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -115,6 +115,7 @@
             button3.TabIndex = 6;
             button3.Text = "PUSH";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // groupBox1
             // 
@@ -129,11 +130,11 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(58, 42);
+            label4.Location = new Point(21, 45);
             label4.Name = "label4";
-            label4.Size = new Size(59, 25);
+            label4.Size = new Size(192, 25);
             label4.TabIndex = 8;
-            label4.Text = "label4";
+            label4.Text = "　　　　　　　　　　";
             // 
             // button4
             // 
@@ -144,6 +145,7 @@
             button4.TabIndex = 9;
             button4.Text = "Yellow";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -154,6 +156,7 @@
             button5.TabIndex = 10;
             button5.Text = "Green";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
@@ -164,6 +167,7 @@
             button6.TabIndex = 11;
             button6.Text = "Blue";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -174,13 +178,17 @@
             button7.TabIndex = 12;
             button7.Text = "ファイル更新";
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(85, 326);
+            label5.BackColor = SystemColors.MenuHighlight;
+            label5.Font = new Font("Yu Gothic UI", 40F);
+            label5.ForeColor = SystemColors.HighlightText;
+            label5.Location = new Point(85, 309);
             label5.Name = "label5";
-            label5.Size = new Size(80, 25);
+            label5.Size = new Size(337, 106);
             label5.TabIndex = 13;
             label5.Text = "00:00:00";
             // 
@@ -194,6 +202,7 @@
             button8.TabIndex = 14;
             button8.Text = "PUSH";
             button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // panel1
             // 
@@ -202,6 +211,12 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(700, 182);
             panel1.TabIndex = 15;
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 1000;
+            timer1.Tick += timer1_Tick;
             // 
             // Form1
             // 
