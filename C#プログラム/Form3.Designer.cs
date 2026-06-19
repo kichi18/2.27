@@ -38,7 +38,7 @@
             ClientSize = new Size(800, 450);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form3";
-            Text = "Form3";
+            Text = "Form③";
             ResumeLayout(false);
         }
 
