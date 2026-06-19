@@ -60,18 +60,18 @@
             label1.AutoSize = true;
             label1.Location = new Point(38, 44);
             label1.Name = "label1";
-            label1.Size = new Size(59, 25);
+            label1.Size = new Size(66, 25);
             label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Text = "取得値";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(38, 79);
             label2.Name = "label2";
-            label2.Size = new Size(59, 25);
+            label2.Size = new Size(48, 25);
             label2.TabIndex = 1;
-            label2.Text = "label2";
+            label2.Text = "分割";
             // 
             // label3
             // 
@@ -87,54 +87,54 @@
             label4.AutoSize = true;
             label4.Location = new Point(114, 79);
             label4.Name = "label4";
-            label4.Size = new Size(59, 25);
+            label4.Size = new Size(30, 25);
             label4.TabIndex = 3;
-            label4.Text = "label4";
+            label4.Text = "①";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Location = new Point(114, 116);
             label5.Name = "label5";
-            label5.Size = new Size(59, 25);
+            label5.Size = new Size(30, 25);
             label5.TabIndex = 4;
-            label5.Text = "label5";
+            label5.Text = "②";
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Location = new Point(114, 153);
             label6.Name = "label6";
-            label6.Size = new Size(59, 25);
+            label6.Size = new Size(30, 25);
             label6.TabIndex = 5;
-            label6.Text = "label6";
+            label6.Text = "③";
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Location = new Point(114, 190);
             label7.Name = "label7";
-            label7.Size = new Size(59, 25);
+            label7.Size = new Size(30, 25);
             label7.TabIndex = 6;
-            label7.Text = "label7";
+            label7.Text = "④";
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Location = new Point(38, 271);
             label8.Name = "label8";
-            label8.Size = new Size(59, 25);
+            label8.Size = new Size(48, 50);
             label8.TabIndex = 7;
-            label8.Text = "label8";
+            label8.Text = "階段\r\n作成";
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Location = new Point(38, 392);
             label9.Name = "label9";
-            label9.Size = new Size(59, 25);
+            label9.Size = new Size(48, 25);
             label9.TabIndex = 8;
-            label9.Text = "label9";
+            label9.Text = "返却";
             // 
             // textBox1
             // 
@@ -166,43 +166,52 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.Yellow;
             button1.Location = new Point(626, 39);
             button1.Name = "button1";
             button1.Size = new Size(112, 34);
             button1.TabIndex = 13;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            button1.Text = "分割";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
+            button2.BackColor = Color.YellowGreen;
             button2.Location = new Point(626, 93);
             button2.Name = "button2";
             button2.Size = new Size(112, 34);
             button2.TabIndex = 14;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            button2.Text = "空白削除A";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
+            button3.BackColor = Color.YellowGreen;
             button3.Location = new Point(626, 133);
             button3.Name = "button3";
             button3.Size = new Size(112, 34);
             button3.TabIndex = 15;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            button3.Text = "空白削除B";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
+            button4.BackColor = Color.Yellow;
             button4.Location = new Point(626, 185);
             button4.Name = "button4";
             button4.Size = new Size(112, 34);
             button4.TabIndex = 16;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
+            button4.Text = "形成";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new Point(38, 305);
+            numericUpDown1.Location = new Point(38, 324);
+            numericUpDown1.Maximum = new decimal(new int[] { 10, 0, 0, 0 });
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(55, 31);
             numericUpDown1.TabIndex = 17;
@@ -224,21 +233,27 @@
             // 
             // button5
             // 
+            button5.BackColor = Color.FromArgb(64, 64, 64);
+            button5.ForeColor = SystemColors.ButtonFace;
             button5.Location = new Point(626, 284);
             button5.Name = "button5";
             button5.Size = new Size(112, 34);
             button5.TabIndex = 20;
-            button5.Text = "button5";
-            button5.UseVisualStyleBackColor = true;
+            button5.Text = "Loop";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
+            button6.BackColor = Color.FromArgb(64, 64, 64);
+            button6.ForeColor = SystemColors.ButtonFace;
             button6.Location = new Point(626, 387);
             button6.Name = "button6";
             button6.Size = new Size(112, 34);
             button6.TabIndex = 21;
-            button6.Text = "button6";
-            button6.UseVisualStyleBackColor = true;
+            button6.Text = "Close";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // panel1
             // 

@@ -62,10 +62,14 @@ namespace C_プログラム
 
             if (result == DialogResult.OK)
             {
-                Form2 form2 = new Form2();
+                string text = label3.Text;
+                Form2 form2 = new Form2(text);
                 form2.ShowDialog();
             }
+
         }
+
+      
 
         //Yellow
         private void button4_Click(object sender, EventArgs e)
