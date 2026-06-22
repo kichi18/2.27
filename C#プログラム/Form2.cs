@@ -87,6 +87,14 @@ namespace C_プログラム
             }
         }
 
+        //返却値の内容をForm1のlabel4に表示
+        public string ResultText
+        {
+            get { return textBox5.Text; }
+            
+        }
+
+        //close
         private void button6_Click(object sender, EventArgs e)
         {
             this.Close();

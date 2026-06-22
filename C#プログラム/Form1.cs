@@ -65,6 +65,8 @@ namespace C_プログラム
                 string text = label3.Text;
                 Form2 form2 = new Form2(text);
                 form2.ShowDialog();
+
+                label4.Text = form2.ResultText;
             }
 
         }
@@ -93,6 +95,21 @@ namespace C_プログラム
         //ファイル更新
         private void button7_Click(object sender, EventArgs e)
         {
+            if(string.IsNullOrWhiteSpace(label4.Text))
+            {
+                MessageBox.Show(Message_manage.Msg2, Message_manage.Title4, MessageBoxButtons.OK);
+                return;
+            }
+
+            try
+            {
+                MessageBox.Show(Message_manage.Msg3, Message_manage.Title2, MessageBoxButtons.OK);
+                File.WriteAllText(textBox1.Text, label4.Text);
+            }
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show(Message_manage.Msg2, Message_manage.Title4,MessageBoxButtons.OK);
+            }
 
         }
 
