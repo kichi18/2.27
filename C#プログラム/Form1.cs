@@ -38,7 +38,9 @@ namespace C_プログラム
         {
             if (string.IsNullOrWhiteSpace(textBox1.Text))
             {
-                MessageBox.Show(Message_manage.Msg2, Message_manage.Title4);
+                MessageBox.Show(Message_manage.Msg2, Message_manage.Title4,
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
                 return;
             }
 
@@ -49,7 +51,9 @@ namespace C_プログラム
             }
             catch (FileNotFoundException)
             {
-                MessageBox.Show(Message_manage.Msg2, Message_manage.Title4);
+                MessageBox.Show(Message_manage.Msg2, Message_manage.Title4,
+                MessageBoxButtons.OK, 
+                MessageBoxIcon.Error);
             }
         }
 
@@ -58,7 +62,7 @@ namespace C_プログラム
         {
             DialogResult result = MessageBox.Show(
                 Message_manage.Msg1, Message_manage.Title3,
-                MessageBoxButtons.OKCancel);
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
             if (result == DialogResult.OK)
             {
@@ -97,7 +101,7 @@ namespace C_プログラム
         {
             if(string.IsNullOrWhiteSpace(label4.Text))
             {
-                MessageBox.Show(Message_manage.Msg2, Message_manage.Title4, MessageBoxButtons.OK);
+                MessageBox.Show(Message_manage.Msg2, Message_manage.Title4, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -108,7 +112,7 @@ namespace C_プログラム
             }
             catch (FileNotFoundException)
             {
-                MessageBox.Show(Message_manage.Msg2, Message_manage.Title4,MessageBoxButtons.OK);
+                MessageBox.Show(Message_manage.Msg2, Message_manage.Title4,MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -118,7 +122,7 @@ namespace C_プログラム
         {
             DialogResult result = MessageBox.Show(
                Message_manage.Msg1, Message_manage.Title3,
-               MessageBoxButtons.OKCancel);
+               MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
             if (result == DialogResult.OK)
             {
